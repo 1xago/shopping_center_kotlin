@@ -1,11 +1,13 @@
 class ShoppingCenter(val converter: IConverter, val calculator: ICalculator) {
 
     fun processTransaction(transaction: Transaction): Int {
+        var totalDiscount = calculator.calculateDiscountValue(transaction)
         var totalWithoutDiscount = calculator.calculateValueWithoutDiscount(transaction)
-        var total = totalWithoutDiscount
+        var total = totalWithoutDiscount - totalDiscount
         printTransaction(transaction)
         println("total price without discount = ${converter.convert(totalWithoutDiscount)}")
-        println("total price  = ${converter.convert(total)}")
+        println("total discount price = ${converter.convert(totalDiscount)}")
+        println("total price = ${converter.convert(total)}")
         return total
     }
 

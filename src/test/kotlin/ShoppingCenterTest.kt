@@ -4,7 +4,6 @@ import io.mockk.every
 import io.mockk.mockk
 
 internal class ShoppingCenterTest {
-
     @Test
     fun `should return the value of the transaction`() {
         val productList = listOf(Product('A', 50), Product('B', 60), Product('C', 25))
@@ -14,12 +13,13 @@ internal class ShoppingCenterTest {
 
         val calculator = mockk<ICalculator>()
         every { calculator.calculateValueWithoutDiscount(any()) } returns 5
+        every { calculator.calculateDiscountValue(any()) } returns 3
 
         val converter = mockk<IConverter>()
         every { converter.convert(any()) } returns ""
 
         var shoppingCenter = ShoppingCenter(converter, calculator)
 
-        assertEquals(5, shoppingCenter.processTransaction(Transaction(productList, discountList, purchasedProducts)))
+        assertEquals(2, shoppingCenter.processTransaction(Transaction(productList, discountList, purchasedProducts)))
     }
 }
