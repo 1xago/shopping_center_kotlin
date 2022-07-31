@@ -1,0 +1,1 @@
+data class Transaction(val productList: List<Product>, val discountsList: List<Discounts>, val shoppingList: List<Char>)

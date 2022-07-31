@@ -1,0 +1,1 @@
+data class Product(val name: Char, var price: Int)
