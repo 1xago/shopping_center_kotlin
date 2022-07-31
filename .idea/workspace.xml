@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44702c07-23a9-4f92-938c-3ad0a792c1d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Discount.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Product.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Transaction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Converter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Converter.kt" afterDir="false" />
+    <list default="true" id="44702c07-23a9-4f92-938c-3ad0a792c1d8" name="Changes" comment="calculates value without applying discounts">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ShoppingCenter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/ShoppingCenterTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ConverterTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ConverterTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +19,21 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -61,8 +66,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="ConverterTest.convert should return the value in pounds" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ShoppingCenterTest">
+    <configuration name="CalculatorTest.calculateValueWithoutDiscount should calculateValue different types of list" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -75,7 +80,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ConverterTest.convert should return the value in pounds&quot;" />
+            <option value="&quot;CalculatorTest.calculateValueWithoutDiscount should calculateValue different types of list&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -85,9 +90,87 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ShoppingCenterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ShoppingCenterTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ShoppingCenterTest.should return the value of the transaction" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ShoppingCenterTest.should return the value of the transaction&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'PedroSoaresLendingWorks.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="PedroSoaresLendingWorks.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ConverterTest.convert should return the value in pounds" />
+        <item itemvalue="Gradle.ShoppingCenterTest" />
+        <item itemvalue="Gradle.Tests in 'PedroSoaresLendingWorks.test'" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.ShoppingCenterTest.should return the value of the transaction" />
+        <item itemvalue="Gradle.CalculatorTest.calculateValueWithoutDiscount should calculateValue different types of list" />
       </list>
     </recent_temporary>
   </component>
@@ -112,5 +195,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add objects" />
+    <MESSAGE value="calculates value without applying discounts" />
+    <option name="LAST_COMMIT_MESSAGE" value="calculates value without applying discounts" />
   </component>
 </project>
